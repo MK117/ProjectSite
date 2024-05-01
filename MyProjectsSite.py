@@ -143,8 +143,8 @@ def projects():
         if st.button('Show logo'):
             display_image('steam_thumbnail.jpg')
 
-        if st.button('View Accuracy'):
-            display_image('accuracy_plot.png')
+        # if st.button('View Accuracy'):
+        #     display_image('accuracy_plot.png')
 
     elif selected_project == 'Meteorite fall prediction':
         redirect_url = 'https://colab.research.google.com/drive/11MY4e2Q7Dn6mP191UWNpXENF6iFxn_XG?usp=sharing'
