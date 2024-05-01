@@ -141,7 +141,8 @@ def projects():
 
 
         if st.button('Show logo'):
-            display_image('steam_thumbnail.png')
+            display_image('steam_thumbnail.jpg')
+
         if st.button('View Accuracy'):
             display_image('accuracy_plot.png')
 
