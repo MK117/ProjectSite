@@ -8,6 +8,10 @@ def display_image(image_path):
     image = Image.open('acc.PNG')
     st.image(image, caption='Accuracy Plot', use_column_width=True)
 
+# def display_another_image(image_path):
+#     image = Image.open('steam_thumbnail.jpg')
+#     st.image(image, use_column_width=True)
+
 with open('lgbmodel.pkl', 'rb') as file:
     model1 = pickle.load(file)
 
@@ -140,11 +144,17 @@ def projects():
                 st.write(f'Expected sales : {result[0]*80.12:.2f} M Units')
 
 
-        if st.button('Show logo'):
-            display_image('steam_thumbnail.jpg')
+        # def dslogo(image_path):
+        #     button_clicked = st.button("Show logo")
+        #     if button_clicked:
+        #         image = Image.open(image_path)
+        #         st.image(image, caption='Steam Logo', use_column_width=True)
 
-        # if st.button('View Accuracy'):
-        #     display_image('accuracy_plot.png')
+        # image_path2 = 'st.jpg'
+        # dslogo(image_path2)
+
+        if st.button('View Accuracy'):
+            display_image('accuracy_plot.png')
 
     elif selected_project == 'Meteorite fall prediction':
         redirect_url = 'https://colab.research.google.com/drive/11MY4e2Q7Dn6mP191UWNpXENF6iFxn_XG?usp=sharing'
