@@ -18,7 +18,7 @@ with open('rc.pkl', 'rb') as file:
     model111 = pickle.load(file)
 
 #Additional files/proj2model.pkl
-with open('Additional files/proj2model.pkl', 'rb') as file:
+with open('proj2model.pkl', 'rb') as file:
     model2 = pickle.load(file)
 
 # Define functions to make predictions using your models
