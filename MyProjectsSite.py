@@ -144,15 +144,6 @@ def projects():
                 st.write(f'Expected sales : {result[0]*80.12:.2f} M Units')
 
 
-        def dslogo(image_path):
-            button_clicked = st.button("Show logo")
-            if button_clicked:
-                image = Image.open(image_path2)
-                st.image(image, caption='Steam Logo', use_column_width=True)
-
-        image_path2 = 'st.jpg'
-        dslogo(image_path2)
-
         if st.button('View Accuracy'):
             display_image('accuracy_plot.png')
 
