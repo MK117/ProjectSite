@@ -140,7 +140,8 @@ def projects():
                 st.write(f'Expected sales : {result[0]*80.12:.2f} M Units')
 
 
-
+        if st.button('Show logo'):
+            display_image('steam_thumbnail.png')
         if st.button('View Accuracy'):
             display_image('accuracy_plot.png')
 
