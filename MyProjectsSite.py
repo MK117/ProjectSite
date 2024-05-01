@@ -94,12 +94,16 @@ def projects():
     selected_project = st.selectbox('Select Project', [' ','Steam games sales data prediction', 'Meteorite fall prediction', 'Global Electricity Production'])
 
     if selected_project == 'Steam games sales data prediction':
+         
+        col1, col2, col3 = st.columns([1, 1, 1])  
+        with col2:  
+            st.image('bgico3.png', width=200)
 
-        redirect_url = 'https://colab.research.google.com/drive/1jlwEO0Z8N-xnutXI63Hp44OAQ9qS1gjA?usp=sharing'
-        if st.button('Show Code'):
-            st.markdown(f'<a href="{redirect_url}" target="_blank">Go to External Site</a>', unsafe_allow_html=True)
-        
+        # st.image('bgico3.png', caption='Steam Logo', width=300, text_align='center')
         st.header('Steam Games Sales Prediction App',divider='rainbow')
+        redirect_url = 'https://colab.research.google.com/drive/1jlwEO0Z8N-xnutXI63Hp44OAQ9qS1gjA?usp=sharing'
+        if st.button('Visit Source'):
+            st.markdown(f'<a href="{redirect_url}" target="_blank">Colab</a>', unsafe_allow_html=True)
         st.subheader('Enter input data to predict')
 
         s1 = st.slider('Name',min_value=0,max_value=11561, value=11075)
