@@ -102,13 +102,25 @@ def projects():
         # st.image('bgico3.png', caption='Steam Logo', width=300, text_align='center')
         st.header('Steam Games Sales Prediction App',divider='rainbow')
         # redirect_url = 'https://colab.research.google.com/drive/1jlwEO0Z8N-xnutXI63Hp44OAQ9qS1gjA?usp=sharing'
-        # if st.button('Visit Source'):
-        #     st.markdown(f'<a href="{redirect_url}" target="_blank">Colab</a>', unsafe_allow_html=True)
+        
         redirect_url = 'https://colab.research.google.com/drive/1jlwEO0Z8N-xnutXI63Hp44OAQ9qS1gjA?usp=sharing'
+        button_style = """
+                display: inline-block;
+                background-color: #000000;
+                color: orange;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 10px;
+                border: 1px solid white;
+            """
+        
         col1, col2, col3 = st.columns([1, 0.5, 1])
         with col2:
-            if st.button('Visit Source'):
-                webbrowser.open_new_tab(redirect_url)
+            st.markdown(f'<a href="{redirect_url}" target="_blank" style="{button_style}">Visit Colab ↗</a>', unsafe_allow_html=True)
         st.subheader('Enter input data to predict')
 
         s1 = st.slider('Name',min_value=0,max_value=11561, value=11075)
@@ -159,7 +171,7 @@ def projects():
     elif selected_project == 'Meteorite fall prediction':
         redirect_url = 'https://colab.research.google.com/drive/11MY4e2Q7Dn6mP191UWNpXENF6iFxn_XG?usp=sharing'
         if st.button('Visit Source'):
-                webbrowser.open_new_tab(redirect_url)
+            st.markdown(f'<a href="{redirect_url}" target="_blank">Go to External Site</a>', unsafe_allow_html=True)
         
         st.header('Meteorite Fall Prediction App',divider='rainbow')
         st.subheader('Enter input data to predict')
