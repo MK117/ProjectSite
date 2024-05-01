@@ -168,9 +168,8 @@ def projects():
         if st.button('View Accuracy'):
             display_image('accuracy_plot.png')
         
-        col1, col2, col3 = st.columns([1, 1.25, 1])  
-        with col2:  
-            st.image('bgico5.png',caption='Powered by Steam', width=300)
+     
+        st.image('bgico6.jpg',caption='Powered by Steam', use_column_width=True)
 
     elif selected_project == 'Meteorite fall prediction':
         redirect_url = 'https://colab.research.google.com/drive/11MY4e2Q7Dn6mP191UWNpXENF6iFxn_XG?usp=sharing'
