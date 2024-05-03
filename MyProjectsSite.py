@@ -35,11 +35,34 @@ def predict_model2(input_data):
     prediction = model2.predict(input_data)
     return prediction
 
-# Home page content
-def home():
-    st.title('Welcome to My Project Showcase site')
-    st.write('This is the home page of my project website.')
+# About page content
+def about():
+    bio_info = {
+    "name": "Hi.",
+    "bio": "Myself Manukarthik and I am a data analyst passionate about transforming data into actionable insights. With a keen eye for detail and a strong analytical mindset, I specialize in exploring datasets, identifying trends, and communicating findings to drive strategic decision-making. I have experience in data visualization, statistical analysis, and data storytelling, and I enjoy leveraging data to solve complex problems and optimize processes. Feel free to explore my projects and reach out to me for collaborations or inquiries!"
+}
 
+    custom_css = """
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            </style>
+            """
+
+    # Display the custom CSS
+    st.markdown(custom_css, unsafe_allow_html=True)
+    # Display the bio information
+    
+    def show_bio_info(bio_info):
+        st.title("About Me")
+        st.subheader(bio_info["name"])
+        st.write(bio_info["bio"])
+
+    # Call the function to display the bio information
+    show_bio_info(bio_info)
+    st.write('Please select navigation on top left to check my projects :)')
 def overview():
     st.title('Overview of Projects')
     proj = st.selectbox('Select Project', [' ','Steam Games', 'Meteorite', 'Global Electricity'])
@@ -219,14 +242,14 @@ def projects():
         if st.button('Show Code'):
             st.markdown(f'<a href="{redirect_url}" target="_blank">Go to External Site</a>', unsafe_allow_html=True)
     else:
-        st.text("Please select a project to predict from the dropdown menu!")
+        st.text("Please select a project to view and predict from the dropdown menu!")
 
             
 
 
 # Create a dictionary to map page names to their respective functions
 pages = {
-    'Home': home,
+    'About': about,
     'Overview': overview,
     'Projects': projects
 }
