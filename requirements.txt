@@ -1,5 +1,4 @@
 xgboost==2.0.3
 scikit-learn==1.4.0
-
-# lightgbm>=3.2.1
+lightgbm>=4.1.0
 # catboost>=0.26.1
