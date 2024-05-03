@@ -26,6 +26,7 @@ with open('proj2model.pkl', 'rb') as file:
     model2 = pickle.load(file)
 
 # Define functions to make predictions using your models
+
 def predict_model1(input_data):
     prediction = model1.predict(input_data)
     return prediction
