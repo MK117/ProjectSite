@@ -12,7 +12,7 @@ def display_image(image_path):
 #     image = Image.open('steam_thumbnail.jpg')
 #     st.image(image, use_column_width=True)
 
-with open('lgbmodel.pkl', 'rb') as file:
+with open('lgbm.pkl', 'rb') as file:
     model1 = pickle.load(file)
 
 with open('gbm.pkl', 'rb') as file:
