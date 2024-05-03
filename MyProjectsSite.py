@@ -146,7 +146,7 @@ def projects():
         with col2:
             st.markdown(f'<a href="{redirect_url}" target="_blank" style="{button_style}">Visit Colab ↗</a>', unsafe_allow_html=True)
         st.subheader('Enter input data to predict')
-
+        st.write('(Added a preset value for sample prediction)')
         s1 = st.slider('Name',min_value=0,max_value=11561, value=11075)
         s2 = st.slider('Platform',min_value=0,max_value=30, value=26)
         s3 = st.slider('Genre',min_value=0,max_value=11, value=10)
