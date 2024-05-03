@@ -255,7 +255,7 @@ pages = {
 }
 
 # Create a sidebar navigation menu
-selected_page = st.sidebar.selectbox('Navigation', list(pages.keys()))
+selected_page = st.sidebar.radio('Navigation', list(pages.keys()))
 
 # Display the selected page content
 pages[selected_page]()
