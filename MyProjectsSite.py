@@ -96,9 +96,8 @@ def projects():
 
     if selected_project == 'Steam games sales data prediction':
          
-        col1, col2, col3 = st.columns([1, 1, 1])  
-        with col2:  
-            st.image('bgico4.png', width=200)
+
+        st.image('bgico7.jpg', use_column_width=True)
 
         # st.image('bgico3.png', caption='Steam Logo', width=300, text_align='center')
         st.header('Steam Games Sales Prediction App',divider='rainbow')
@@ -153,24 +152,24 @@ def projects():
             if selected_model == 'Gradient Boosting Regressor':
                 st.subheader('Global Sales')
                 result = model11.predict([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14]])
-                st.write(f'Expected sales : {result[0]*80.12:.2f} M Units')
+                st.write(f'Expected sales : {result[0]*78:.2f} M Units')
   
             elif selected_model == 'LGBM Regressor':
                 st.subheader('Global Sales')
                 result = model1.predict([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14]])
-                st.write(f'Expected sales : {result[0]*80.12:.2f} M Units')
+                st.write(f'Expected sales : {result[0]*78:.2f} M Units')
             
             elif selected_model == 'Random Forest Regressor':
                 st.subheader('Global Sales')
                 result = model111.predict([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14]])
-                st.write(f'Expected sales : {result[0]*80.12:.2f} M Units')
+                st.write(f'Expected sales : {result[0]*78:.2f} M Units')
 
 
         if st.button('View Accuracy'):
             display_image('accuracy_plot.png')
         
      
-        st.image('bgico6.jpg',caption='Powered by Steam', use_column_width=True)
+        st.image('bgico6.jpg',caption='Powered by Steam | Dataset provided by data.world', use_column_width=True)
 
     elif selected_project == 'Meteorite fall prediction':
         redirect_url = 'https://colab.research.google.com/drive/11MY4e2Q7Dn6mP191UWNpXENF6iFxn_XG?usp=sharing'
