@@ -39,7 +39,8 @@ def predict_model2(input_data):
 def about():
     bio_info = {
     "name": "Hi.",
-    "bio": "Myself Manukarthik and I am a data analyst passionate about transforming data into actionable insights. With a keen eye for detail and a strong analytical mindset, I specialize in exploring datasets, identifying trends, and communicating findings to drive strategic decision-making. I have experience in data visualization, statistical analysis, and data storytelling, and I enjoy leveraging data to solve complex problems and optimize processes. Feel free to explore my projects from the navigation menu on the top left :)"
+    "bio": "Myself Manukarthik and I am a data analyst passionate about transforming data into actionable insights. With a keen eye for detail and a strong analytical mindset, I specialize in exploring datasets, identifying trends, and communicating findings to drive strategic decision-making. I have experience in data visualization, statistical analysis, and data storytelling, and I enjoy leveraging data to solve complex problems and optimize processes.", 
+    "bio1": "Feel free to explore my projects from the navigation menu on the top left :)"
 }
 
     custom_css = """
@@ -59,6 +60,7 @@ def about():
         st.title("About Me")
         st.subheader(bio_info["name"])
         st.write(bio_info["bio"])
+        st.write(bio_info["bio1"])
 
     # Call the function to display the bio information
     show_bio_info(bio_info)
