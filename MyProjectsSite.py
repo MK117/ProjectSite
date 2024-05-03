@@ -120,7 +120,7 @@ def projects():
     if selected_project == 'Steam games sales data prediction':
          
 
-        st.image('bgico7.jpg', use_column_width=True)
+        st.image('bgico6.jpg', use_column_width=True)
 
         # st.image('bgico3.png', caption='Steam Logo', width=300, text_align='center')
         st.header('Steam Games Sales Prediction App',divider='rainbow')
