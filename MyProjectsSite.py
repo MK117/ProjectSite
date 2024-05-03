@@ -176,17 +176,17 @@ def projects():
             if selected_model == 'Gradient Boosting Regressor':
                 st.subheader('Global Sales')
                 result = model11.predict([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14]])
-                st.write(f'Expected sales : {result[0]*78:.2f} M Units')
+                st.write(f'Expected sales : {result[0]*78.2:.2f} M Units')
   
             elif selected_model == 'LGBM Regressor':
                 st.subheader('Global Sales')
                 result = model1.predict([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14]])
-                st.write(f'Expected sales : {result[0]*78:.2f} M Units')
+                st.write(f'Expected sales : {result[0]*78.2:.2f} M Units')
             
             elif selected_model == 'Random Forest Regressor':
                 st.subheader('Global Sales')
                 result = model111.predict([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14]])
-                st.write(f'Expected sales : {result[0]*78:.2f} M Units')
+                st.write(f'Expected sales : {result[0]*78.2:.2f} M Units')
 
 
         if st.button('View Accuracy'):
