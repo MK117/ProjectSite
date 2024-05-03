@@ -39,7 +39,7 @@ def predict_model2(input_data):
 def about():
     bio_info = {
     "name": "Hi.",
-    "bio": "Myself Manukarthik and I am a data analyst passionate about transforming data into actionable insights. With a keen eye for detail and a strong analytical mindset, I specialize in exploring datasets, identifying trends, and communicating findings to drive strategic decision-making. I have experience in data visualization, statistical analysis, and data storytelling, and I enjoy leveraging data to solve complex problems and optimize processes. Feel free to explore my projects and reach out to me for collaborations or inquiries!"
+    "bio": "Myself Manukarthik and I am a data analyst passionate about transforming data into actionable insights. With a keen eye for detail and a strong analytical mindset, I specialize in exploring datasets, identifying trends, and communicating findings to drive strategic decision-making. I have experience in data visualization, statistical analysis, and data storytelling, and I enjoy leveraging data to solve complex problems and optimize processes. Feel free to explore my projects from the navigation menu on the top left :)"
 }
 
     custom_css = """
@@ -62,7 +62,6 @@ def about():
 
     # Call the function to display the bio information
     show_bio_info(bio_info)
-    st.write('Please select navigation on top left to check my projects :)')
 def overview():
     st.title('Overview of Projects')
     proj = st.selectbox('Select Project', [' ','Steam Games', 'Meteorite', 'Global Electricity'])
