@@ -39,7 +39,7 @@ def predict_model2(input_data):
 def about():
     bio_info = {
     "name": "Hi.",
-    "bio": "Myself Manukarthik and I am a data analyst passionate about transforming data into actionable insights. With a keen eye for detail and a strong analytical mindset, I specialize in exploring datasets, identifying trends, and communicating findings to drive strategic decision-making. I have experience in data visualization, statistical analysis, and data storytelling, and I enjoy leveraging data to solve complex problems and optimize processes. This website showcases completed projects and those currently under development.", 
+    "bio": "I am Manukarthik, an ML Engineer passionate about transforming data into actionable insights. With a keen eye for detail and a strong analytical mindset, I specialize in exploring datasets, identifying trends, and communicating findings to drive strategic decision-making. I have experience in data visualization, statistical analysis, and data storytelling, and I enjoy leveraging data to solve complex problems and optimize processes. This website showcases completed projects and those currently under development.", 
     "bio1": "Feel free to explore my projects from the navigation menu on the top left :)"
 }
 
